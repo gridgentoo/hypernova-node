@@ -7,9 +7,6 @@
 As Airbnb builds more of its Frontend around Server Side Rendering, we took a look at how to optimize our server configurations to support it.  
 https://medium.com/airbnb-engineering/operationalizing-node-js-for-server-side-rendering-c5ba718acfc9  
 
-Node.js для решения задач серверного рендеринга в Airbnb  
-https://docs.google.com/document/d/1g5DDrJBhl-9PyNFsX5NVpmAX_uX_9X1V4-SzjM6Hyvs/  
-
 [01.12.2014] Использование Node.js и Redis при построении приложений с высокой степенью масштабируемости https://drive.google.com/drive/folders/1l0_dWRGqlEHWwGyaJFD_0b7NTsIA7K5d  
 
 [24 июля 2018] Node.js для решения задач серверного рендеринга в Airbnb  
