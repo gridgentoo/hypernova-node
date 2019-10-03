@@ -1,6 +1,15 @@
 # hypernova-node
 # код airbnb : : 
 
+[01.12.2014] Использование Node.js и Redis при построении приложений с высокой степенью масштабируемости
+https://drive.google.com/drive/folders/1l0_dWRGqlEHWwGyaJFD_0b7NTsIA7K5d
+
+[24 июля 2018] Node.js для решения задач серверного рендеринга в Airbnb
+https://docs.google.com/document/d/1g5DDrJBhl-9PyNFsX5NVpmAX_uX_9X1V4-SzjM6Hyvs/
+
+[28 марта 2019] Как мы пилили серверный рендеринг и что из этого вышло
+https://docs.google.com/document/d/1Stgohn-I9WZ6aLFiYSvsHzKZfVEiHecLgShlyjpAlew/
+
 # hypernova-client
 
 > A node client for sending requests to Hypernova.
