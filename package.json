@@ -1,0 +1,57 @@
+{
+  "name": "hypernova-client",
+  "version": "1.1.1",
+  "description": "A node client for Hypernova",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airbnb/hypernova-node"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "clean": "rimraf lib coverage",
+    "prebuild": "npm run clean",
+    "build": "babel src -d lib",
+    "lint": "eslint src",
+    "pretest": "npm run --silent lint",
+    "test": "npm run coverage",
+    "pretests-only": "npm run build",
+    "tests-only": "npm run test:quick",
+    "precoverage": "npm run build",
+    "coverage": "babel-node $(which istanbul) cover --report html $(which _mocha) -- -R tap --recursive test/*-test.js",
+    "postcoverage": "istanbul check && echo code coverage thresholds met, achievement unlocked!",
+    "test:quick": "babel-node $(which _mocha) -R tap test/*-test.js",
+    "test:watch": "mocha --compilers js:babel/register --recursive test/*-test.js --watch"
+  },
+  "author": "Josh Perez <josh.perez@airbnb.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "object.values": "^1.0.4",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-airbnb": "^2.6.0",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "express": "^4.16.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "rimraf": "^2.6.2",
+    "sinon": "^6.3.5"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "mocha"
+    ]
+  }
+}
